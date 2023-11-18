@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" media="screen and (max-width:1200px)"  href="phone.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Vina+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="game">
+     <div class="game-heading">
+        <h1>Welcome To Bat , Ball, Stump Game </h1>
+        </div>
+        <div class="game-instruction">
+        <p> In this season of ICC Cricket World Cup , it's not possible to get bored <br>
+        But if you are still getting bored then why not try playing Cricket with your computer.<br>User have to chose either Bat or ball or stump and computer will automatically chose the other.<br> Result will be decided upon the combination of the choices decided by user and computer.</p>
+     </div>
+    </div>
+       <div class="button">
+           <button class="btn1" onclick=" 
+              console.log('You have chosen to BAT') ;
+              let randomNumber=Math.random()*3;
+              let computerChoice;
+              if( randomNumber > 0 && randomNumber <=1){
+                computerChoice='BAT';
+                console.log('Computer Choice is BAT');
+              }
+              else if (randomNumber > 1 && randomNumber <=2){
+                computerChoice='BALL';
+                console.log('Computer Choice is BALL');
+              }
+              else{
+                computerChoice='STUMP';
+                console.log('Computer Choice is STUMP');
+              }
+              const computerChoiceMsg = `Computer Choice is ${computerChoice}`;
+           let resultMsg;
+           if ( computerChoice==='BAT'){
+            resultMsg='It is a Tie';
+           }
+           else if (computerChoice==='BALL'){
+            resultMsg='User won the Game';
+           }
+           else if(computerChoice==='STUMP'){
+            resultMsg='Computer won the GAME';
+           }
+            alert(`You chose to BAT . Computer Choice is ${computerChoice} and ${resultMsg} `);
+            
+             " > I choose to Bat</button> <br>
+           
+           <button class="btn2" onclick="
+            console.log('User chose to Ball'); 
+            let randomnumber = Math.random()*3;
+            let computerchoice;
+            if( randomnumber > 0 && randomnumber <=1){
+                computerchoice='BAT';
+            }
+            else if ( randomnumber > 1 && randomnumber <=2){
+                computerchoice= 'BALL';
+            }
+            else if ( randomnumber > 2 && randomnumber <=3){
+                computerchoice='STUMP';
+            }
+            const computerchoicemsg='Computer choice is ${computerchoice}';
+            let resultmsg;
+            if( computerchoice==='BAT'){
+                resultmsg='Computer won the GAME';
+            }
+            else if( computerchoice==='BALL'){
+                resultmsg='IT IS A TIE';
+            }
+            else if ( computerchoice==='STUMP'){
+                resultmsg='USER WON THE GAME';
+            }
+            alert(` You Chose to BALL . Computer choice is ${computerchoice} and ${resultmsg}`);
+           "> I choose to Ball</button> <br>
+           
+           <button class="btn3" onclick="  
+              console.log('USER CHOSE STUMP');
+              let RandomNumber= Math.random()*3;
+              let ComputerChoice;
+              if( RandomNumber > 0 && RandomNumber <=1){
+                ComputerChoice='BAT;'
+              }
+              else if ( RandomNumber > 1 && RandomNumber<=2){
+                ComputerChoice='BALL';
+              }
+              else if ( RandomNumber >2 && RandomNumber<=3){
+                ComputerChoice='STUMP';
+              }
+              const ComputerChoiceMsg = 'Computer Choice is ${ComputerChoice}';
+              let ResultMsg;
+              if( ComputerChoice==='BAT'){
+                ResultMsg='USER WON  THE GAME';
+              }
+              else if (ComputerChoice==='BALL'){
+                ResultMsg='Computer won the game';
+              }
+              else(ComputerChoice==='STUMP')
+              {
+                ResultMsg='IT IS A TIE';
+              }
+              alert(` You chose to STUMP. Computer choice is ${ComputerChoice} and ${ResultMsg}`);"> I choose to Stump</button> <br>
+           
+       </div>
+</body>
+</html>
